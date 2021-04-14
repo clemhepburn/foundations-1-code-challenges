@@ -40,9 +40,9 @@ etc
 */
 
 export function makeWeirdStringFromKeys(someObject) {
+    const weirdString = Object.keys(someObject)
     
-    
-    return '';
+    return weirdString.join('');
 }
 
 
@@ -56,5 +56,6 @@ Output:
 */
 
 export function makeTuples(someObject) {
-    return [];
+    const newArray = Object.entries(someObject)
+    return newArray;
 }
