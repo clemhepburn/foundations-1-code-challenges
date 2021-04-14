@@ -70,8 +70,9 @@ Output:
 */
 
 export function getAllFruitsThatCostMoreThanTwo(arr) {
-    const newArray = [];
-    newArray.push((arr.find(grocery => grocery.id === 'kiwi')))
+const newArray = arr.filter((object) => {
+    return object.price > 2 && object.category === 'fruit';
+})
     return newArray;
 }
 
